@@ -16,4 +16,5 @@ WORKDIR /app
 COPY --from=builder /app/out /app
 
 # Run the .NET program
-CMD ["dotnet", "/app/out/ASYD_Demo.dll"]
+ENTRYPOINT ["dotnet", "/app/ASYD_Demo.dll"]
+#CMD ["dotnet", "/app/ASYD_Demo.dll"]
